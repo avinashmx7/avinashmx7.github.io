@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<div class="viewport-background"></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -18,22 +19,23 @@
 
 <div class="container">
     <br>
-    <h1 class="text-primary display-1 fw-bold d-flex justify-content-center">
+    <h1 class="text-white display-1 d-flex justify-content-center">
         Avinash's Portfolio
     </h1>
     <br>
+    <hr>
 </div>
 
 <!--Games-->
 <div class="container">
     <div>
-        <h2 class="text-white text-center bg-secondary rounded-5 p-1">Games</h2>
+        <h1 class="text-white text-center display-4">Games</h1>
     </div>
 
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="card col-lg-10 col-md-10 col-sm-10 rounded-4">
-                <h5 class="card-title">Fish Simulation Game</h5>
+                <h4 class="card-title">Fish Simulation Game</h4>
                 <p class="card-text">An innovative koi fish simulation where a single fish model is transformed dynamically using custom shaders to generate unique colors and body features. Each
                     fish
                     is driven by genetic traits, determining its appearance and behavior. These genes are passed to the next generation, introducing slight mutations to ensure siblings share
@@ -42,22 +44,19 @@
 
                     This advanced koi fish simulation features a multi-layered shader system that creates highly detailed and dynamic fish models. The fish is composed of five layers of
                     shaders/materials to achieve realistic and customizable appearances:
-                    <li>Base Layer Shader – Controls the fish’s body color, which is influenced by factors such as age, health, and genetics. The color adapts over time, offering a realistic
-                        representation of the fish’s life cycle.
+                    <li class="card-text">Base Layer Shader – Controls the fish’s body color, which is influenced by factors such as age, health, and genetics. The color adapts over time, offering a
+                        realistic representation of the fish’s life cycle.
                     </li>
 
-                    <li>Three Layers of Pigment Shaders – These layers project a custom pigment sheet onto the fish model, enabling intricate color patterns and variations. Players can adjust
-                        pigment
-                        properties, adding complexity and uniqueness to each fish.
+                    <li class="card-text">Three Layers of Pigment Shaders – These layers project a custom pigment sheet onto the fish model, enabling intricate color patterns and variations. Players
+                        can adjust pigment properties, adding complexity and uniqueness to each fish.
                     </li>
 
-                    <li>Final Shader Layer – This layer handles the scales, metallic sheen, and other fine details, enhancing the fish’s realism with lifelike textures and lighting effects,
-                        creating a
-                        visually striking appearance.
+                    <li class="card-text">Final Shader Layer – This layer handles the scales, metallic sheen, and other fine details, enhancing the fish’s realism with lifelike textures and lighting
+                        effects, creating a visually striking appearance.
                     </li>
                     <br>
-                    Each of these shaders was created by me using Shader Graph, enabling a flexible and powerful system for creating realistic, customizable fish.
-                </p>
+                <p class="card-text">Each of these shaders was created by me using Shader Graph, enabling a flexible and powerful system for creating realistic, customizable fish.</p>
                 <div class="ratio ratio-16x9">
                     <iframe src="https://drive.google.com/file/d/1Jy4oLFm5ekkueHAn0LpmjdMOHWciiRT1/preview" width="640" height="360" allowfullscreen></iframe>
                 </div>
@@ -66,14 +65,14 @@
 
         <div class="row justify-content-center align-items-center">
             <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h5 class="card-title">Chess Multiplayer</h5>
+                <h4 class="card-title">Chess Multiplayer</h4>
                 <p class="card-text">A dynamic chess game demo showcasing real-time multiplayer functionality powered by Photon.</p>
                 <div class="ratio ratio-16x9">
                     <iframe src="https://drive.google.com/file/d/12auCyHsdg7COo3egsfUXVwIoMqy703B2/preview" width="640" height="360" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="card col-lg-5 col-md-10 col-sm-10  rounded-3">
-                <h5 class="card-title">Color Sort</h5>
+                <h4 class="card-title">Color Sort</h4>
                 <p class="card-text">Simple color sort game proto featuring a custom shader created with Shader Graph to simulate slanting colored water effects.</p>
                 <div class="ratio ratio-16x9">
                     <iframe src="https://drive.google.com/file/d/1CKJP9k3Ub6x5EbMlU6e6HinA0TpCoX0i/preview" width="640" height="360" allowfullscreen></iframe>
@@ -84,7 +83,7 @@
 
         <div class="row justify-content-center align-items-center">
             <div class="card col-lg-10 col-md-10 col-sm-10 rounded-4">
-                <h5 class="card-title">Fashion Game</h5>
+                <h4 class="card-title">Fashion Game</h4>
                 <p class="card-text">A creative fashion experience featuring premade clothes with realistic cloth and hair physics. Players can mix and match garments, layer outfits, and step into
                     the
                     role of a fashion designer. Additionally, users can craft custom materials by selecting fabric types and colors, directly influencing cloth physics and motion, for a fully
@@ -98,7 +97,7 @@
 
         <div class="row justify-content-center align-items-center">
             <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h5 class="card-title">Cloth Simulation</h5>
+                <h4 class="card-title">Cloth Simulation</h4>
                 <p class="card-text">A foundational prototype for the Fashion Game, showcasing realistic cloth physics. This demo focuses on simulating fabric behavior.</p>
                 <div class="ratio ratio-16x9">
                     <iframe src="https://drive.google.com/file/d/15KrZ0EqV7899eBzpixghjzQMsu9mMDAZ/preview" width="640" height="360" allowfullscreen></iframe>
@@ -107,7 +106,7 @@
 
 
             <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h5 class="card-title">Layered Cloth Simulation</h5>
+                <h4 class="card-title">Layered Cloth Simulation</h4>
                 <p class="card-text">An advanced prototype for the Fashion Game, demonstrating realistic physics for layered garments. This technology ensures seamless interaction and movement of
                     multiple fabric layers.</p>
                 <div class="ratio ratio-16x9">
@@ -117,7 +116,7 @@
 
             <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
                 <!--Hair Simulation-->
-                <h5 class="card-title">Hair Simulation</h5>
+                <h4 class="card-title">Hair Simulation</h4>
                 <p class="card-text">A dedicated prototype for the Fashion Game, showcasing realistic hair physics. This system accurately simulates natural hair motion and interaction.</p>
                 <div class="ratio ratio-16x9">
                     <iframe src="https://drive.google.com/file/d/15UjUeeBJEDoVqBao8bVXK77YnPYN2fu4/preview" width="640" height="360" allowfullscreen></iframe>
@@ -128,7 +127,7 @@
 
         <div class="row justify-content-center align-items-center">
             <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h5 class="card-title">Minesweeper</h5>
+                <h4 class="card-title">Minesweeper</h4>
                 <p class="card-text">A classic Minesweeper prototype featuring traditional gameplay mechanics, offering a challenging and engaging puzzle experience.</p>
                 <div class="ratio ratio-16x9">
                     <iframe src="https://drive.google.com/file/d/1245KAigkdLujdJqi5C8UcDZMkEAvfJ3V/preview" width="640" height="360" allowfullscreen></iframe>
@@ -137,7 +136,7 @@
 
 
             <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h5 class="card-title">Minesweeper Customisation</h5>
+                <h4 class="card-title">Minesweeper Customisation</h4>
                 <p class="card-text">This prototype allows dynamic adjustments to the grid size and bomb probability, giving players the flexibility to modify the bomb density and difficulty
                     level.</p>
                 <div class="ratio ratio-16x9">
@@ -148,7 +147,7 @@
 
         <div class="row justify-content-center align-items-center">
             <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h5 class="card-title">Parental Control App for Kids Games</h5>
+                <h4 class="card-title">Parental Control App for Kids Games</h4>
                 <p class="card-text">Developed during a hackathon, this prototype allows parents to manage access to a kid’s game. The app provides features to lock or unlock the game, as well as
                     selectively enable or disable specific game categories, offering a tailored and controlled gaming experience.</p>
                 <div class="ratio ratio-16x9">
@@ -157,7 +156,7 @@
             </div>
 
             <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h5 class="card-title">Space Shooter</h5>
+                <h4 class="card-title">Space Shooter</h4>
                 <p class="card-text">Created during a one-day hackathon, this game combines typing practice with an action-packed space shooter. Players control a spaceship flying through space,
                     typing words displayed on the screen. Each keypress triggers a shot that destroys approaching obstacles. The challenge lies in typing quickly to eliminate obstacles before they
                     reach and collide with the ship, making it both a fun and educational typing speed exercise.</p>
@@ -167,19 +166,22 @@
             </div>
         </div>
     </div>
-
+    <br>
+    <hr>
 
     <!--Firebase-->
     <div class="container">
         <div>
-            <h2 class="text-white text-center bg-secondary rounded-5 p-1">Firebase Services</h2>
+            <h1 class="text-white text-center display-4">Firebase Services</h1>
         </div>
 
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
                     <!--Firebase Analytics-->
-                    <h5 class="card-title">Firebase Analytics</h5>
+                    <h4 class="card-title">Firebase Analytics</h4>
+                    <p class="card-text">This demo showcases my implementation of Firebase Analytics in a mobile app, with a live demonstration of events being triggered and displayed in the Firebase
+                        Console. It highlights the process of tracking user interactions and analyzing data in real-time.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/12jqrURcxRd697ACOHFUtPQpltlkjgJl_/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
@@ -187,7 +189,9 @@
 
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
                     <!--Remote Config-->
-                    <h5 class="card-title">Firebase Remote Config</h5>
+                    <h4 class="card-title">Firebase Remote Config</h4>
+                    <p class="card-text">This demo highlights my implementation of Firebase Remote Config in a mobile app, with a live showcase of how remote configurations are updated and applied in
+                        real-time. </p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/12bPOpYUOTkblKbxkQ4B3Ne91LuTvfgSP/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
@@ -198,7 +202,9 @@
             <div class="row justify-content-center align-items-center">
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
                     <!--Firebase Notifications-->
-                    <h5 class="card-title">Firebase Notifications</h5>
+                    <h4 class="card-title">Firebase Notifications</h4>
+                    <p class="card-text">This demo showcases my integration of Firebase Cloud Messaging (FCM) for push notifications in a mobile app. It includes a live demonstration of sending and
+                        receiving notifications in real-time, highlighting how to engage users with timely, targeted messages.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/130rpY5MsGgNO3VByfXHLCT9tNRuJkEA_/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
@@ -206,7 +212,9 @@
 
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
                     <!--Firebase Deeplink-->
-                    <h5 class="card-title">Firebase Dynamic Links (Deeplinking)</h5>
+                    <h4 class="card-title">Firebase Dynamic Links (Deep-linking)</h4>
+                    <p class="card-text">This demo showcases the integration of deep linking in a Unity app using Firebase Dynamic Links. It includes a live demonstration of how deep links are
+                        created, shared, and opened, enabling a seamless user experience across platforms while tracking engagement through Firebase.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/12u4DNZx32NH0pa1uc0D5-h2cYQUx_VV-/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
@@ -214,18 +222,22 @@
             </div>
         </div>
     </div>
+    <br>
+    <hr>
 
     <!--Unity Services-->
     <div class="container">
         <div>
-            <h2 class="text-white text-center bg-secondary rounded-5 p-1">Unity Services</h2>
+            <h1 class="text-white text-center display-4">Unity Services</h1>
         </div>
 
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
                     <!--Remote Config-->
-                    <h5 class="card-title">Unity Ads</h5>
+                    <h4 class="card-title">Unity Ads</h4>
+                    <p class="card-text">This demo showcases the integration of Unity Ads in a mobile app built with Unity. It includes a live demonstration of displaying various ad formats (e.g.,
+                        interstitials, rewarded videos) and how to manage ad placement to optimize user experience and monetization.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/134tI6fxez4Setq8-QVLoOAx8hnl2ZiR8/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
@@ -233,7 +245,9 @@
 
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
                     <!--Firebase Analytics-->
-                    <h5 class="card-title">Remote Config</h5>
+                    <h4 class="card-title">Remote Config</h4>
+                    <p class="card-text">This demo highlights the integration of Unity Remote Config in a mobile app, showing how to dynamically update app settings and content without needing to
+                        release a new version. It demonstrates real-time configuration changes and how they impact app behavior and user experience.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/1347Oq-ke1ln34KuTwQ14ehQ3_LUYf105/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
@@ -241,25 +255,31 @@
             </div>
         </div>
     </div>
+    <br>
+    <hr>
 
 
     <!--PlayFab-->
     <div class="container">
         <div>
-            <h2 class="text-white text-center bg-secondary rounded-5 p-1">PlayFab</h2>
+            <h1 class="text-white text-center display-4">PlayFab</h1>
         </div>
 
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h5 class="card-title">Anonymous Login</h5>
+                    <h4 class="card-title">Anonymous Login</h4>
+                    <p class="card-text">This demo showcases the integration of PlayFab’s anonymous login feature in a Unity app. It demonstrates how users can sign in without creating an account,
+                        allowing for a seamless and secure experience while interacting with PlayFab services like player data storage and game analytics.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/15pex0RbBj8TulMjeaDIAlkB_VVgJWPvT/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
                 </div>
 
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h5 class="card-title">Email Login</h5>
+                    <h4 class="card-title">Email Login</h4>
+                    <p class="card-text">This demo highlights the integration of PlayFab’s email login system in a Unity app. It demonstrates how users can securely log in using their email and
+                        password, providing a streamlined authentication process while accessing PlayFab features like player profiles and data management.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/15piUXFpY6Q6e2K-1J0evfIYtPmzjK5OK/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
@@ -268,14 +288,19 @@
 
             <div class="row justify-content-center align-items-center">
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h5 class="card-title">Catalog & Inventory Management</h5>
+                    <h4 class="card-title">Catalog & Inventory Management</h4>
+                    <p class="card-text">This demo showcases the integration of PlayFab’s catalog and inventory management system in a Unity app. It demonstrates how to manage in-game items, handle
+                        item purchases, and update player inventories seamlessly. Watch as I walk through setting up a dynamic catalog, tracking item ownership, and integrating it into the game for a
+                        smooth player experience.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/15oxFewr6ZMCjZwro2MHWEaadGtEyfDWD/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
                 </div>
 
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h5 class="card-title">Remote Config</h5>
+                    <h4 class="card-title">Remote Config</h4>
+                    <p class="card-text">This demo highlights the integration of PlayFab Remote Config in a Unity app. It shows how to dynamically adjust game settings, features, and content in
+                        real-time without requiring an app update. Watch as I demonstrate how to create and apply remote configurations to enhance player experience and optimize game performance.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/15pGVbui8-zEfXeWB3BTTk84yAUjVfegc/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
@@ -283,25 +308,31 @@
             </div>
         </div>
     </div>
+    <br>
+    <hr>
 
 
-    <!--PlayFab-->
+    <!--Networking-->
     <div class="container">
         <div>
-            <h2 class="text-white text-center bg-secondary rounded-5 p-1">Networking</h2>
+            <h1 class="text-white text-center display-4">Networking</h1>
         </div>
 
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h5 class="card-title">Simple Login System</h5>
+                    <h4 class="card-title">Simple Login System</h4>
+                    <p class="card-text">This demo showcases the implementation of a basic login system using API links. It demonstrates how user credentials are sent securely to a backend API,
+                        validated, and a response is received to authenticate users.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/123OZL5itfOSDN6L23daKuucRn6kHLTCQ/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
                 </div>
 
                 <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h5 class="card-title">Socket Connection</h5>
+                    <h4 class="card-title">Socket Connection</h4>
+                    <p class="card-text">This demo demonstrates how to establish a basic socket connection in a Unity app. It shows how to connect to a server using WebSockets, send and receive
+                        real-time data, and manage communication between the client and server.</p>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/12T6Oi_7ThxleZr35fOEOMUebW7t_iNeQ/preview" width="640" height="360" allowfullscreen></iframe>
                     </div>
@@ -309,4 +340,5 @@
             </div>
         </div>
     </div>
+    <br>
 </body>

@@ -3,3 +3,26 @@
     margin: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
+
+.viewport-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    z-index: -1;
+}
+
+hr {
+    border: 2px solid #bfbfbf;
+    opacity: 0.35;
+}
+
+.card-text {
+    color: #303030;
+}
+
+.card-title {
+    align-self: center;
+}
