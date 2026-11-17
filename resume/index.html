@@ -1,230 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="resume-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Avinash's Resume</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Avinash — Resume</title>
+    <meta name="description" content="Resume of Avinash, Senior Software Engineer (Unity 3D) with 8+ years building 2D/3D games for iOS, Android, Fire TV, tvOS and WebGL.">
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="resume-style.css">
 </head>
 
-<body bs-body-bg>
+<body>
+<main class="resume">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
-
-<div class="container">
-    <br>
-    <h1 class="text-primary display-1 d-flex justify-content-center fw-bold">AVINASH</h1>
-    <P class="text-secondary d-flex justify-content-center">avinashmx7@gmail.com | (+91) 90957 46207 | Mumbai, India
-    </P>
-    <br>
+    <header class="resume-header">
+        <h1>AVINASH</h1>
+        <p class="role">Senior Software Engineer (Unity 3D)</p>
+        <p class="contact">
+            <a href="mailto:avinashmx7@gmail.com">avinashmx7@gmail.com</a>
+            <span>Mumbai, India</span>
+        </p>
+        <p class="contact">
+            <a href="https://avinashmx7.github.io/">avinashmx7.github.io</a>
+            <a href="https://www.linkedin.com/in/avinash16121995/">linkedin.com/in/avinash16121995</a>
+            <a href="https://github.com/avinashmx7">github.com/avinashmx7</a>
+        </p>
+        <button class="print-button" type="button" onclick="window.print()">Download PDF</button>
+    </header>
 
     <!-- SUMMARY -->
-
-    <h3 class="text-primary">Professional Summary</h3>
-    <p>
-        Experienced Senior Unity Developer proficient in both 2D and 3D game development, with a proven track record
-        of successfully managing small teams. Adept at optimizing game performance, implementing complex gameplay
-        mechanics, and delivering high-quality gaming experiences. Actively seeking opportunities to apply my
-        expertise, expand my knowledge, and contribute to the company's success.
-    </p>
+    <section>
+        <h2>Summary</h2>
+        <p>
+            Senior Unity engineer with 8+ years shipping 2D/3D games for iOS, Android, Fire TV, tvOS and WebGL, from kids' learning
+            titles (Kiddopia, AutiSpark) to a shader-driven koi breeding sim (Koitopia) and a multiplayer party game (Punchline). Builds gameplay systems, custom Shader Graph shaders, editor
+            tooling and live-ops integrations (Firebase, PlayFab, Unity Gaming Services), and has led teams of 4–5 developers.
+        </p>
+        <p class="core-skills"><strong>Core skills:</strong> <span>Unity</span> · <span>C#</span> · <span>Shader Graph &amp; URP</span> ·
+            <span>Multiplayer (Photon, WebRTC)</span> · <span>Firebase, PlayFab &amp; UGS</span> · <span>IAP on all 3 app stores</span> ·
+            <span>Fire TV &amp; tvOS</span></p>
+    </section>
 
     <!-- WORK EXPERIENCE -->
+    <section>
+        <h2>Experience</h2>
 
-    <h3 class="text-primary ">Work Experience</h3>
+        <article class="job">
+            <div class="job-head">
+                <h3>Senior Software Engineer (Unity 3D)</h3>
+                <span class="dates">Aug 2025 – Present</span>
+            </div>
+            <p class="company">GMonks Games · Mumbai, India</p>
+            <ul>
+                <li>Lead a 3-developer team on <a href="https://apps.apple.com/in/app/punchline-draw-memes-jokes/id6780454276">Punchline</a> and own its architecture: a multiplayer party game for 3–10 players with drawing,
+                    meme, imposter and charades modes and in-game WebRTC voice and video calling.
+                </li>
+                <li>Develop Unity games for Fire TV and tvOS, using the new Input System for smooth remote and controller play.</li>
+                <li>Solo-developed <a href="https://www.amazon.in/dp/B0GL6HB7SH">ASMR Cream 3D</a> for Fire TV,
+                    using dynamic mesh generation to simulate cream and a custom lightweight shader tuned for low-spec TV hardware.
+                </li>
+            </ul>
+        </article>
 
-    <!-- GMONKS ENTERTAINMENT PRIVATE LIMITED -->
+        <article class="job">
+            <div class="job-head">
+                <h3>Senior Software Engineer (Unity 3D)</h3>
+                <span class="dates">Apr 2024 – Jul 2025</span>
+            </div>
+            <p class="company">Kiddopia (Paper Boat Apps Private Limited) · Mumbai, India</p>
+            <ul>
+                <li>Developed 5 mini-games for the kids' learning app <a href="https://apps.apple.com/us/app/kiddopia-kids-learning-games/id1223397201">Kiddopia</a>.</li>
+                <li>Managed the main app's monthly releases with the Tech Lead, keeping deployments on time and stable.</li>
+                <li>Contributed to the architecture and design of upcoming games, with a focus on scalability.</li>
+                <li>Built 5 in-house Unity editor tools that streamlined development across the team.</li>
+            </ul>
+        </article>
 
-    <h5>Senior Unity Developer</h5>
-    <h6>GMonks Entertainment Private Limited, Mumbai, India</h6>
-    <p>July 2025 - Present</p>
+        <article class="job">
+            <div class="job-head">
+                <h3>Senior Software Engineer (Unity 3D)</h3>
+                <span class="dates">Dec 2022 – Apr 2024</span>
+            </div>
+            <p class="company">Juego Studios Private Limited · Bengaluru, India · Remote</p>
+            <ul>
+                <li>Solo-led development of <a href="https://apps.apple.com/in/app/koitopia/id6474526850">Koitopia</a>, a 3D koi breeding
+                    game, building a gene-based inheritance system and five layers of custom Shader Graph materials that give every fish a
+                    unique appearance.
+                </li>
+                <li>Led development of a fashion game featuring cloth physics, hair simulation and a complex UI.</li>
+                <li>Solo-developed a multiplayer Ludo game using Photon.</li>
+            </ul>
+        </article>
 
-    <ul>
-        <li>Developed games for FireTV and tvOS integrating the new Input System to support seamless gameplay on TV platforms.</li>
-        <li>Built and optimized 2D & 3D hyper-casual games by implementing shaders, mesh manipulation, and performance tuning for lightweight devices with limited hardware capacity.</li>
-    </ul>
+        <article class="job">
+            <div class="job-head">
+                <h3>Senior Unity Game Developer</h3>
+                <span class="dates">Jun 2018 – Dec 2022</span>
+            </div>
+            <p class="company">IDZ Digital Private Limited · Mumbai, India</p>
+            <ul>
+                <li>Led development of <a href="https://apps.apple.com/in/app/kids-autism-games-autispark/id1498731271">AutiSpark</a>,
+                    a learning game for children with autism, and built many mini-games.
+                </li>
+                <li>Solo-developed <a href="https://apps.apple.com/in/app/balloon-bubble-pop-games/id1448010566">Baby World</a>, a
+                    toddler app with mini-games, using physics and URP for richer visuals.
+                </li>
+                <li>Built 2D and 3D coloring games on third-party coloring plugins, adding save states and particle effects.</li>
+                <li>Solo-developed multiple 3D games for the web using WebGL.</li>
+                <li>Created custom helper plugins that organized and sped up internal workflows.</li>
+            </ul>
+        </article>
 
-    <!-- PAPERBOAT APPS PRIVATE LIMITED -->
-
-    <h5>Senior Unity Developer</h5>
-    <h6>Paper Boat Apps Private Limited, Mumbai, India</h6>
-    <p>Apr 2024 - July 2025</p>
-
-    <ul>
-        <li>Developed multiple mini-games for the popular kids’ educational game '<a href="https://apps.apple.com/us/app/kiddopia-kids-learning-games/id1223397201">Kiddopia</a>'.
-        <li>Collaborate closely with the Tech Lead to manage and coordinate Kiddopia release cycles, ensuring timely and stable deployments.</li>
-        <li>Contributed to the project’s architecture and design for upcoming games, supporting scalability and
-            innovation.
-        </li>
-        <li>Created in-house Unity tools using custom editor scripts to streamline development processes and enhance
-            team efficiency.
-        </li>
-    </ul>
-
-
-    <!-- JUEGO STUDIOS PRIVATE LIMITED -->
-
-    <h5>Senior Software Engineer (Unity)</h5>
-    <h6>Juego Studios Private Limited, Bangalore, India</h6>
-    <p>Dec 2022 - Apr 2024</p>
-
-    <ul>
-        <li>Solo lead developer on 3D fish simulation project, leveraging custom shaders created with Shader Graph and
-            implementing a sophisticated gene-based architecture.
-        </li>
-        <li>I also worked as a lead developer in the development of an upcoming fashion-related game, which
-            incorporates advanced features such as cloth physics, hair simulation, and complex user interface.
-        </li>
-        <li>I also have prior experience working on a multiplayer Ludo game.</li>
-    </ul>
-
-    <!-- IDZ DIGITAL PRIVATE LIMITED -->
-
-    <br>
-    <h5>Senior Unity Game Developer</h5>
-    <h6>IDZ Digital Private Limited, Mumbai, India</h6>
-    <p>Jun, 2018 - Dec, 2022</p>
-
-    <ul>
-        <li>As a lead developer, I contributed to the creation of '<a
-                href="https://apps.apple.com/in/app/kids-autism-games-autispark/id1498731271">AutiSpark</a>', a game
-            designed to provide children
-            with
-            autism a fun and educational experience.
-        </li>
-        <li>My role extended to developing mini-games for '<a
-                href="https://apps.apple.com/in/app/kids-autism-games-autispark/id1498731271">AutiSpark</a>' and
-            other related projects.
-        </li>
-        <li>Solo-developed the '<a href="https://apps.apple.com/in/app/balloon-bubble-pop-games/id1448010566">Baby
-            World</a>' project, encompassing the main app and toddler-friendly mini-games.
-            Applied
-            physics mechanics and harnessed URP features to enhance the visual experience, delivering a
-            comprehensive
-            and captivating application for toddlers.
-        </li>
-        <li>I specialized in crafting a variety of coloring games, both in 2D and 3D, using third-party coloring
-            plugins. Additionally, I implemented features like save state functionality and particle effects to
-            enhance
-            the overall user experience.
-        </li>
-        <li>I also have experience in developing multiple 3D games for web platforms using WebGL technology.</li>
-        <li>In addition to game development, I developed custom helper plugins to organize and enhance various
-            processes within the organization.
-        </li>
-    </ul>
-
-    <!-- FREELANCING -->
-
-    <br>
-    <h5>Android Developer</h5>
-    <h6>Freelancing</h6>
-    <p>Jun, 2017 - May, 2018</p>
-
-    <ul>
-        <li>I have experience developing a range of projects, including apps focused on quotes, wallpapers, and a
-            few utility applications.
-        </li>
-    </ul>
-
-    <!-- END WORK EXPERIENCE -->
-
-
-    <!-- EDUCATION -->
-
-    <h3 class="text-primary">Education</h3>
-    <h5>B.E Computer Science</h5>
-    <h6>National College Of Engineering, TN, India</h6>
-    <p>June 2013 - April 2017</p>
-
-    <ul>
-        <li>Designed an Android application enriched with assistive features like Dynamic Call Forwarding, Night Mode, Remote Vault & Remote Config.</li>
-    </ul>
-
-    <!-- END EDUCATION -->
-
+        <article class="job">
+            <div class="job-head">
+                <h3>Android Developer</h3>
+                <span class="dates">May 2017 – May 2018</span>
+            </div>
+            <p class="company">Freelance · Tirunelveli, India</p>
+            <ul>
+                <li>Built native Android apps in Java with Android Studio, including quotes, wallpaper and utility apps.</li>
+            </ul>
+        </article>
+    </section>
 
     <!-- SKILLS -->
+    <section>
+        <h2>Skills</h2>
+        <p class="skill"><strong>Engine &amp; Gameplay:</strong> Unity, C#, Input System, physics, cloth &amp; hair simulation, DOTween, ProBuilder</p>
+        <p class="skill"><strong>Rendering:</strong> URP, Built-in RP, Shader Graph, mesh manipulation, performance profiling for mobile &amp; TV</p>
+        <p class="skill"><strong>Platforms:</strong> iOS (incl. SwiftUI), Android, Fire TV, tvOS, WebGL; App Store, Play Store &amp; Amazon Appstore</p>
+        <p class="skill"><strong>Firebase:</strong> Auth, Firestore, Realtime Database, Cloud Functions, Storage, Analytics, Crashlytics, Remote Config, FCM, A/B Testing</p>
+        <p class="skill"><strong>PlayFab:</strong> Auth, player data, economy &amp; inventory, leaderboards, CloudScript, matchmaking, multiplayer servers</p>
+        <p class="skill"><strong>Unity Gaming Services:</strong> Auth, Cloud Save, Cloud Code, Economy, Remote Config, Analytics, Leaderboards, Lobby, Relay, Matchmaker, Vivox, Cloud Content Delivery</p>
+        <p class="skill"><strong>Multiplayer &amp; Networking:</strong> Photon PUN 2, WebRTC voice &amp; video calling, REST APIs, WebSockets</p>
+        <p class="skill"><strong>Monetization:</strong> In-app purchases &amp; subscriptions on App Store, Google Play &amp; Amazon Appstore; AdMob (incl. mediation), Unity Ads, Unity LevelPlay</p>
+        <p class="skill"><strong>Tooling &amp; Practices:</strong> Custom editor tools &amp; plugins, UI Toolkit, design patterns, SOLID, Git, debugging &amp; profiling, leading teams of 4–5</p>
+        <p class="skill"><strong>AI-Assisted Development:</strong> Claude Code (custom skills that automate project scaffolding, template sync and App Store pre-release audits), CLAUDE.md conventions, MCP integrations, plan mode, parallel agent sessions</p>
+    </section>
 
-    <h3 class="text-primary">Skills</h3>
-    <h5>Unity</h5>
-    <ul>
-        <li>Experience in developing both 2D and 3D games.</li>
-        <li> Skilled in integrating Firebase and Unity services, including real-time databases, analytics, and cloud
-            functions.
-        </li>
-        <li>Experienced in implementing PlayFab services for essential functionalities such as login systems,
-            inventory management, and remote configuration.
-        </li>
-        <li>Experience in developing and distributing Unity apps on various platforms, including the Apple App
-            Store, Google Play Store, and Amazon App Store.
-        </li>
-        <li> Experience in managing teams comprising 4-5 members.</li>
-        <li> Proficiency in working with REST APIs to enable data exchange and communication.</li>
-        <li> Experienced in both Built-in Renderer Pipeline & Universal Renderer Pipeline (URP)</li>
-        <li> Experienced in implementing in-app purchases, monthly subscription models, and ad services such as
-            AdMob, Unity Ads, and IronSource for monetization.
-        </li>
-        <li> Skilled in utilizing the DOTween plugin.</li>
-        <li> Developed custom Unity plugins to extend functionality.</li>
-        <li> Created few complex shaders using Shader Graph for special effects.</li>
-        <li> Developed a chess multiplayer game using Photon.</li>
-        <li> Familiar with the basics of Unity's built-in AI.</li>
-        <li> Familiar with ProBuilder tools to create 3D shapes for quick prototyping.</li>
-        <li> Familiar with creating Unity editor tools to streamline development processes.</li>
-        <li> Familiar with Unity UI toolkit.</li>
-        <li> Capable of incorporating cloth physics and hair simulation into game mechanics.</li>
-    </ul>
+    <!-- EDUCATION -->
+    <section>
+        <h2>Education</h2>
+        <article class="job">
+            <div class="job-head">
+                <h3>B.E. Computer Science</h3>
+                <span class="dates">Jun 2013 – Apr 2017</span>
+            </div>
+            <p class="company">National College of Engineering, Tamil Nadu, India</p>
+        </article>
+    </section>
 
-    <h5>Programming</h5>
-    <ul>
-        <li>Prioritizing clean and readable coding styles enhances collaboration and maintainability</li>
-        <li>Bringing experience in implementing diverse design patterns for scalable and modular solutions.</li>
-        <li>Adhering to SOLID, DRY & other principles guides my approach for robust, efficient & scalable code.</li>
-        <li>Focus on performance-oriented design ensures optimal algorithms and resource usage.</li>
-        <li>Proficient in effective debugging and profiling.</li>
-    </ul>
+    <!-- LANGUAGES & INTERESTS -->
+    <section>
+        <h2>Languages &amp; Interests</h2>
+        <p class="inline-list"><strong>Languages:</strong> Tamil (native), English, Hindi</p>
+        <p class="inline-list"><strong>Interests:</strong> Photography, photo &amp; video editing</p>
+    </section>
 
-    <!-- END SKILLS -->
-
-    <!-- IMPORTANT LINKS -->
-    <h3 class="text-primary">Important Links</h3>
-    <ul>
-        <li>Portfolio: <a href="https://avinashmx7.github.io/"> https://avinashmx7.github.io/</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/avinash16121995/">https://www.linkedin.com/in/avinash16121995/</a></li>
-        <li>GitHub: <a href="https://github.com/avinashmx7">https://github.com/avinashmx7</a></li>
-    </ul>
-
-    <!-- END IMPORTANT LINKS -->
-
-
-    <!-- KNOWN LANGUAGES -->
-
-    <div>
-        <h3 class="text-primary">Known Languages</h3>
-        <span class="badge rounded-pill bg-secondary" style="padding: 10px">Tamil (Native)</span>
-        <span class="badge rounded-pill bg-secondary" style="padding: 10px">English</span>
-        <span class="badge rounded-pill bg-secondary" style="padding: 10px">Hindi</span>
-    </div>
-
-    <!-- END KNOWN LANGUAGES -->
-
-    <!-- HOBBIES -->
-
-    <div>
-        <h3 class="text-primary">Hobbies</h3>
-        <span class="badge rounded-pill bg-secondary" style="padding: 10px">Photography</span>
-        <span class="badge rounded-pill bg-secondary" style="padding: 10px">Photo Editing</span>
-        <span class="badge rounded-pill bg-secondary" style="padding: 10px">video Editing</span>
-        <span class="badge rounded-pill bg-secondary" style="padding: 10px">Movies & TV shows</span>
-    </div>
-
-    <!-- END HOBBIES -->
-    <br>
-</div>
+</main>
 </body>
+</html>
