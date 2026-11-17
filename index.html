@@ -1,344 +1,571 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avinash's Portfolio</title>
+    <title>Avinash — Unity Game Developer Portfolio</title>
+    <meta name="description" content="Avinash, Senior Software Engineer (Unity 3D). 8+ years shipping 2D/3D Unity games for iOS, Android, Fire TV, tvOS and WebGL: shipped titles, games, prototypes and service integrations.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Avinash — Unity Game Developer Portfolio">
+    <meta property="og:description" content="Senior Software Engineer (Unity 3D) with 8+ years shipping 2D/3D Unity games for iOS, Android, Fire TV, tvOS and WebGL.">
+    <meta property="og:url" content="https://avinashmx7.github.io/">
+    <meta property="og:image" content="https://avinashmx7.github.io/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Avinash, Senior Software Engineer (Unity 3D), with icons of shipped games">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0b0d12">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-<div class="viewport-background"></div>
+
+<nav class="navbar navbar-expand-md sticky-top site-nav">
+    <div class="container">
+        <a class="navbar-brand fw-semibold" href="#top">Avinash</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#shipped">Shipped</a></li>
+                <li class="nav-item"><a class="nav-link" href="#games">Games</a></li>
+                <li class="nav-item"><a class="nav-link" href="#prototypes">Prototypes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="resume/">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main id="top">
+
+    <!--Hero-->
+    <header class="hero">
+        <div class="container">
+            <p class="eyebrow">Unity game developer</p>
+            <h1 class="hero-name">Avinash</h1>
+            <p class="hero-title">Senior Software Engineer (Unity 3D)</p>
+            <p class="hero-pitch">8+ years shipping 2D/3D Unity games for iOS, Android, Fire TV, tvOS and WebGL.</p>
+            <p class="hero-availability"><span class="status-dot" aria-hidden="true"></span>Open to Senior/Lead Unity roles · Mumbai or remote</p>
+            <div class="hero-actions">
+                <a class="btn btn-accent" href="resume/">Resume</a>
+                <a class="btn btn-outline-light" href="https://www.linkedin.com/in/avinash16121995/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn btn-outline-light" href="https://github.com/avinashmx7" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn btn-outline-light" href="mailto:avinashmx7@gmail.com">Email</a>
+            </div>
+        </div>
+    </header>
+
+    <!--Shipped Work-->
+    <section id="shipped" class="section">
+        <div class="container">
+            <h2 class="section-title">Shipped Work</h2>
+            <p class="section-lead">Games I have built and released on the stores.</p>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <div class="work-head">
+                                <img class="app-icon" src="assets/icons/punchline.jpg" alt="Punchline app icon" width="56" height="56" loading="lazy">
+                                <div>
+                                    <h3 class="card-title">Punchline</h3>
+                                    <p class="card-meta">GMonks Games · Lead developer</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Lead a team of 3 and own the architecture of this multiplayer party game for 3–10 players: drawing, meme, imposter and charades modes, plus in-game voice and video calls over WebRTC.</p>
+                            <div class="tags">
+                                <span class="badge tag">Multiplayer</span>
+                                <span class="badge tag">WebRTC voice &amp; video</span>
+                                <span class="badge tag">iOS</span>
+                                <span class="badge tag">In-app purchases</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://apps.apple.com/in/app/punchline-draw-memes-jokes/id6780454276" target="_blank" rel="noopener">View on the App Store &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <div class="work-head">
+                                <img class="app-icon" src="assets/icons/asmr-cream.jpg" alt="ASMR Cream 3D app icon" width="56" height="56" loading="lazy">
+                                <div>
+                                    <h3 class="card-title">ASMR Cream 3D</h3>
+                                    <p class="card-meta">GMonks Games · Solo developer</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Fire TV dessert-decorating game. Dynamic mesh generation simulates the cream, and a custom lightweight shader keeps it looking rich on low-end TV hardware.</p>
+                            <div class="tags">
+                                <span class="badge tag">Fire TV</span>
+                                <span class="badge tag">Dynamic mesh</span>
+                                <span class="badge tag">Custom shader</span>
+                                <span class="badge tag">Optimisation</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://www.amazon.in/dp/B0GL6HB7SH" target="_blank" rel="noopener">View on Amazon Appstore &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <div class="work-head">
+                                <img class="app-icon" src="assets/icons/kiddopia.jpg" alt="Kiddopia app icon" width="56" height="56" loading="lazy">
+                                <div>
+                                    <h3 class="card-title">Kiddopia</h3>
+                                    <p class="card-meta">Paper Boat Apps · 2024–2025</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Built 5 mini-games and 5 in-house editor tools for this kids' learning app, and managed the main app's monthly release cycle.</p>
+                            <div class="tags">
+                                <span class="badge tag">Unity</span>
+                                <span class="badge tag">iOS</span>
+                                <span class="badge tag">Android</span>
+                                <span class="badge tag">Editor tools</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://apps.apple.com/us/app/kiddopia-kids-learning-games/id1223397201" target="_blank" rel="noopener">View on the App Store &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <div class="work-head">
+                                <img class="app-icon" src="assets/icons/koitopia.jpg" alt="Koitopia app icon" width="56" height="56" loading="lazy">
+                                <div>
+                                    <h3 class="card-title">Koitopia</h3>
+                                    <p class="card-meta">Juego Studios · Solo lead developer</p>
+                                </div>
+                            </div>
+                            <p class="card-text">3D koi breeding game where a gene-based system and five custom Shader Graph layers give every fish a unique look.</p>
+                            <div class="tags">
+                                <span class="badge tag">Unity</span>
+                                <span class="badge tag">Shader Graph</span>
+                                <span class="badge tag">Genetics system</span>
+                                <span class="badge tag">iOS</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://apps.apple.com/in/app/koitopia/id6474526850" target="_blank" rel="noopener">View on the App Store &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <div class="work-head">
+                                <img class="app-icon" src="assets/icons/autispark.jpg" alt="AutiSpark app icon" width="56" height="56" loading="lazy">
+                                <div>
+                                    <h3 class="card-title">AutiSpark</h3>
+                                    <p class="card-meta">IDZ Digital · Lead developer</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Led development of learning games for children with autism, building many of its mini-games.</p>
+                            <div class="tags">
+                                <span class="badge tag">Unity</span>
+                                <span class="badge tag">iOS</span>
+                                <span class="badge tag">Android</span>
+                                <span class="badge tag">Team lead</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://apps.apple.com/in/app/kids-autism-games-autispark/id1498731271" target="_blank" rel="noopener">View on the App Store &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <div class="work-head">
+                                <img class="app-icon" src="assets/icons/baby-world.jpg" alt="Baby World app icon" width="56" height="56" loading="lazy">
+                                <div>
+                                    <h3 class="card-title">Baby World</h3>
+                                    <p class="card-meta">IDZ Digital · Solo developer</p>
+                                </div>
+                            </div>
+                            <p class="card-text">Built the main app and its toddler-friendly mini-games on my own, using physics and URP effects.</p>
+                            <div class="tags">
+                                <span class="badge tag">Unity</span>
+                                <span class="badge tag">URP</span>
+                                <span class="badge tag">Physics</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="card-link" href="https://apps.apple.com/in/app/balloon-bubble-pop-games/id1448010566" target="_blank" rel="noopener">View on the App Store &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Featured Games-->
+    <section id="games" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Games</h2>
+            <p class="section-lead">Larger projects I led, with gameplay footage.</p>
+            <div class="row g-4">
+                <div class="col-12">
+                    <article class="card work-card">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <div class="video video-fill" data-drive-id="1Jy4oLFm5ekkueHAn0LpmjdMOHWciiRT1">
+                                    <img src="https://drive.google.com/thumbnail?id=1Jy4oLFm5ekkueHAn0LpmjdMOHWciiRT1&sz=w640" alt="" loading="lazy" onerror="this.remove()">
+                                    <button type="button" class="play" aria-label="Play Koitopia video"></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card-body">
+                                    <h3 class="card-title">Koitopia: Koi Simulation</h3>
+                                    <p class="card-text">A koi simulation where one fish model becomes endless unique fish. Genes drive each fish's colours, body and behaviour, and pass to the next generation with small mutations, so siblings look related but never identical.</p>
+                                    <p class="card-text">Every fish is rendered with five Shader Graph layers I wrote:</p>
+                                    <ul class="card-list">
+                                        <li><strong>Base layer</strong>: body colour that shifts with age, health and genetics.</li>
+                                        <li><strong>Three pigment layers</strong>: project custom pigment sheets for detailed, adjustable patterns.</li>
+                                        <li><strong>Detail layer</strong>: scales, metallic sheen and fine lighting.</li>
+                                    </ul>
+                                    <div class="tags">
+                                        <span class="badge tag">Shader Graph</span>
+                                        <span class="badge tag">Genetics system</span>
+                                        <span class="badge tag">3D</span>
+                                        <span class="badge tag">Solo lead</span>
+                                    </div>
+                                    <a class="card-link d-inline-block mt-3" href="https://apps.apple.com/in/app/koitopia/id6474526850" target="_blank" rel="noopener">View on the App Store &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12">
+                    <article class="card work-card">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <div class="video video-fill" data-drive-id="1cntxvHjo18cADukrp-IGwm9SLmI6JPel">
+                                    <img src="https://drive.google.com/thumbnail?id=1cntxvHjo18cADukrp-IGwm9SLmI6JPel&sz=w640" alt="" loading="lazy" onerror="this.remove()">
+                                    <button type="button" class="play" aria-label="Play Fashion Game video"></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card-body">
+                                    <h3 class="card-title">Fashion Game</h3>
+                                    <p class="card-text">Mix, match and layer outfits with realistic cloth and hair physics. Players design their own materials by choosing fabric type and colour, which changes how the cloth moves.</p>
+                                    <div class="tags">
+                                        <span class="badge tag">Cloth physics</span>
+                                        <span class="badge tag">Hair simulation</span>
+                                        <span class="badge tag">Complex UI</span>
+                                        <span class="badge tag">Lead developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Prototypes-->
+    <section id="prototypes" class="section">
+        <div class="container">
+            <h2 class="section-title">Prototypes</h2>
+            <p class="section-lead">Smaller builds, tech tests and hackathon games.</p>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="video" data-drive-id="12auCyHsdg7COo3egsfUXVwIoMqy703B2">
+                            <img src="https://drive.google.com/thumbnail?id=12auCyHsdg7COo3egsfUXVwIoMqy703B2&sz=w640" alt="" loading="lazy" onerror="this.remove()">
+                            <button type="button" class="play" aria-label="Play Chess Multiplayer video"></button>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Chess Multiplayer</h3>
+                            <p class="card-text">Real-time online chess between two players.</p>
+                            <div class="tags">
+                                <span class="badge tag">Photon PUN 2</span>
+                                <span class="badge tag">Multiplayer</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="video" data-drive-id="1CKJP9k3Ub6x5EbMlU6e6HinA0TpCoX0i">
+                            <img src="https://drive.google.com/thumbnail?id=1CKJP9k3Ub6x5EbMlU6e6HinA0TpCoX0i&sz=w640" alt="" loading="lazy" onerror="this.remove()">
+                            <button type="button" class="play" aria-label="Play Color Sort video"></button>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Color Sort</h3>
+                            <p class="card-text">A colour sort puzzle with a custom shader that simulates slanting coloured water in the tubes.</p>
+                            <div class="tags">
+                                <span class="badge tag">Shader Graph</span>
+                                <span class="badge tag">Puzzle</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="video" data-drive-id="15KrZ0EqV7899eBzpixghjzQMsu9mMDAZ">
+                            <img src="https://drive.google.com/thumbnail?id=15KrZ0EqV7899eBzpixghjzQMsu9mMDAZ&sz=w640" alt="" loading="lazy" onerror="this.remove()">
+                            <button type="button" class="play" aria-label="Play Cloth Simulation video"></button>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Cloth Simulation</h3>
+                            <p class="card-text">The first Fashion Game prototype: realistic fabric behaviour on a single garment.</p>
+                            <div class="tags">
+                                <span class="badge tag">Cloth physics</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="video" data-drive-id="15SrhIh8mInIzOBBipbqeclzJNHRfoy0Z">
+                            <img src="https://drive.google.com/thumbnail?id=15SrhIh8mInIzOBBipbqeclzJNHRfoy0Z&sz=w640" alt="" loading="lazy" onerror="this.remove()">
+                            <button type="button" class="play" aria-label="Play Layered Cloth Simulation video"></button>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Layered Cloth Simulation</h3>
+                            <p class="card-text">Several garments worn on top of each other, moving and interacting as one outfit.</p>
+                            <div class="tags">
+                                <span class="badge tag">Cloth physics</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="video" data-drive-id="15UjUeeBJEDoVqBao8bVXK77YnPYN2fu4">
+                            <img src="https://drive.google.com/thumbnail?id=15UjUeeBJEDoVqBao8bVXK77YnPYN2fu4&sz=w640" alt="" loading="lazy" onerror="this.remove()">
+                            <button type="button" class="play" aria-label="Play Hair Simulation video"></button>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Hair Simulation</h3>
+                            <p class="card-text">Natural hair motion and interaction, built for the Fashion Game.</p>
+                            <div class="tags">
+                                <span class="badge tag">Hair simulation</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="video" data-drive-id="12XMOpLlF6wkhCz0YfjO4IgffzWh0XgXx">
+                            <img src="https://drive.google.com/thumbnail?id=12XMOpLlF6wkhCz0YfjO4IgffzWh0XgXx&sz=w640" alt="" loading="lazy" onerror="this.remove()">
+                            <button type="button" class="play" aria-label="Play Parental Control video"></button>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Parental Control for Kids' Games</h3>
+                            <p class="card-text">Hackathon build that lets parents lock the game or turn individual game categories on and off.</p>
+                            <div class="tags">
+                                <span class="badge tag">Hackathon</span>
+                                <span class="badge tag">Kids</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="video" data-drive-id="1PoumP_8AxbDAVYq47oAqRddj3_YYgWBG">
+                            <img src="https://drive.google.com/thumbnail?id=1PoumP_8AxbDAVYq47oAqRddj3_YYgWBG&sz=w640" alt="" loading="lazy" onerror="this.remove()">
+                            <button type="button" class="play" aria-label="Play Space Shooter video"></button>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Space Shooter</h3>
+                            <p class="card-text">One-day hackathon game: type the words on screen to fire at incoming obstacles before they hit your ship.</p>
+                            <div class="tags">
+                                <span class="badge tag">Hackathon</span>
+                                <span class="badge tag">Typing game</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Services & Integrations-->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Services &amp; Integrations</h2>
+            <p class="section-lead">Backend, analytics and monetisation services I have integrated into Unity apps, and the AI tooling I build with.</p>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Firebase</h3>
+                            <div class="tags">
+                                <span class="badge tag">Authentication</span>
+                                <span class="badge tag">Firestore</span>
+                                <span class="badge tag">Realtime Database</span>
+                                <span class="badge tag">Cloud Functions</span>
+                                <span class="badge tag">Cloud Storage</span>
+                                <span class="badge tag">Analytics</span>
+                                <span class="badge tag">Crashlytics</span>
+                                <span class="badge tag">Remote Config</span>
+                                <span class="badge tag">Cloud Messaging</span>
+                                <span class="badge tag">A/B Testing</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">PlayFab</h3>
+                            <div class="tags">
+                                <span class="badge tag">Authentication</span>
+                                <span class="badge tag">Player data</span>
+                                <span class="badge tag">Economy &amp; inventory</span>
+                                <span class="badge tag">Leaderboards</span>
+                                <span class="badge tag">CloudScript</span>
+                                <span class="badge tag">Matchmaking</span>
+                                <span class="badge tag">Multiplayer servers</span>
+                                <span class="badge tag">Title data</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Unity Gaming Services</h3>
+                            <div class="tags">
+                                <span class="badge tag">Authentication</span>
+                                <span class="badge tag">Cloud Save</span>
+                                <span class="badge tag">Cloud Code</span>
+                                <span class="badge tag">Economy</span>
+                                <span class="badge tag">Remote Config</span>
+                                <span class="badge tag">Analytics</span>
+                                <span class="badge tag">Leaderboards</span>
+                                <span class="badge tag">Lobby</span>
+                                <span class="badge tag">Relay</span>
+                                <span class="badge tag">Matchmaker</span>
+                                <span class="badge tag">Vivox</span>
+                                <span class="badge tag">Cloud Content Delivery</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Multiplayer &amp; Networking</h3>
+                            <div class="tags">
+                                <span class="badge tag">Photon PUN 2</span>
+                                <span class="badge tag">WebRTC voice &amp; video</span>
+                                <span class="badge tag">REST APIs</span>
+                                <span class="badge tag">WebSockets</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Monetisation</h3>
+                            <p class="card-text">In-app purchases and subscriptions shipped on all three stores.</p>
+                            <div class="tags">
+                                <span class="badge tag">App Store</span>
+                                <span class="badge tag">Google Play</span>
+                                <span class="badge tag">Amazon Appstore</span>
+                                <span class="badge tag">AdMob</span>
+                                <span class="badge tag">Unity Ads</span>
+                                <span class="badge tag">Unity LevelPlay</span>
+                                <span class="badge tag">Ad mediation</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card work-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">AI-Assisted Development</h3>
+                            <p class="card-text">Custom Claude Code skills that automate project scaffolding, template sync and App Store pre-release audits.</p>
+                            <div class="tags">
+                                <span class="badge tag">Claude Code</span>
+                                <span class="badge tag">Custom skills</span>
+                                <span class="badge tag">CLAUDE.md conventions</span>
+                                <span class="badge tag">MCP</span>
+                                <span class="badge tag">Plan mode</span>
+                                <span class="badge tag">Parallel agents</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-links">
+            <a href="mailto:avinashmx7@gmail.com">avinashmx7@gmail.com</a>
+            <a href="https://www.linkedin.com/in/avinash16121995/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/avinashmx7" target="_blank" rel="noopener">GitHub</a>
+            <a href="resume/">Resume</a>
+        </div>
+        <p class="footer-copy">&copy; <span id="year">2026</span> Avinash</p>
+    </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+<script>
+    document.querySelectorAll('.video').forEach(function (video) {
+        video.addEventListener('click', function () {
+            if (video.querySelector('iframe')) return;
+            var frame = document.createElement('iframe');
+            frame.src = 'https://drive.google.com/file/d/' + video.dataset.driveId + '/preview';
+            frame.title = video.querySelector('.play').getAttribute('aria-label').replace(/^Play /, '');
+            frame.allow = 'autoplay; fullscreen';
+            video.replaceChildren(frame);
+        });
+    });
 
+    var nav = document.getElementById('mainNav');
+    nav.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            if (!nav.classList.contains('show')) return;
+            event.preventDefault();
+            nav.addEventListener('hidden.bs.collapse', function () {
+                document.querySelector(link.hash).scrollIntoView();
+                history.pushState(null, '', link.hash);
+            }, {once: true});
+            bootstrap.Collapse.getOrCreateInstance(nav).hide();
+        });
+    });
 
-<div class="container">
-    <br>
-    <h1 class="text-white display-1 d-flex justify-content-center">
-        Avinash's Portfolio
-    </h1>
-    <br>
-    <hr>
-</div>
-
-<!--Games-->
-<div class="container">
-    <div>
-        <h1 class="text-white text-center display-4">Games</h1>
-    </div>
-
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="card col-lg-10 col-md-10 col-sm-10 rounded-4">
-                <h4 class="card-title">Fish Simulation Game</h4>
-                <p class="card-text">An innovative koi fish simulation where a single fish model is transformed dynamically using custom shaders to generate unique colors and body features. Each
-                    fish
-                    is driven by genetic traits, determining its appearance and behavior. These genes are passed to the next generation, introducing slight mutations to ensure siblings share
-                    familial
-                    similarities while maintaining individuality. This blend of genetics and shader technology creates a rich, lifelike ecosystem where no two koi fish are exactly alike.
-
-                    This advanced koi fish simulation features a multi-layered shader system that creates highly detailed and dynamic fish models. The fish is composed of five layers of
-                    shaders/materials to achieve realistic and customizable appearances:
-                    <li class="card-text">Base Layer Shader – Controls the fish’s body color, which is influenced by factors such as age, health, and genetics. The color adapts over time, offering a
-                        realistic representation of the fish’s life cycle.
-                    </li>
-
-                    <li class="card-text">Three Layers of Pigment Shaders – These layers project a custom pigment sheet onto the fish model, enabling intricate color patterns and variations. Players
-                        can adjust pigment properties, adding complexity and uniqueness to each fish.
-                    </li>
-
-                    <li class="card-text">Final Shader Layer – This layer handles the scales, metallic sheen, and other fine details, enhancing the fish’s realism with lifelike textures and lighting
-                        effects, creating a visually striking appearance.
-                    </li>
-                    <br>
-                <p class="card-text">Each of these shaders was created by me using Shader Graph, enabling a flexible and powerful system for creating realistic, customizable fish.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/1Jy4oLFm5ekkueHAn0LpmjdMOHWciiRT1/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center align-items-center">
-            <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h4 class="card-title">Chess Multiplayer</h4>
-                <p class="card-text">A dynamic chess game demo showcasing real-time multiplayer functionality powered by Photon.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/12auCyHsdg7COo3egsfUXVwIoMqy703B2/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="card col-lg-5 col-md-10 col-sm-10  rounded-3">
-                <h4 class="card-title">Color Sort</h4>
-                <p class="card-text">Simple color sort game proto featuring a custom shader created with Shader Graph to simulate slanting colored water effects.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/1CKJP9k3Ub6x5EbMlU6e6HinA0TpCoX0i/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row justify-content-center align-items-center">
-            <div class="card col-lg-10 col-md-10 col-sm-10 rounded-4">
-                <h4 class="card-title">Fashion Game</h4>
-                <p class="card-text">A creative fashion experience featuring premade clothes with realistic cloth and hair physics. Players can mix and match garments, layer outfits, and step into
-                    the
-                    role of a fashion designer. Additionally, users can craft custom materials by selecting fabric types and colors, directly influencing cloth physics and motion, for a fully
-                    immersive and personalized design journey.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/1cntxvHjo18cADukrp-IGwm9SLmI6JPel/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row justify-content-center align-items-center">
-            <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h4 class="card-title">Cloth Simulation</h4>
-                <p class="card-text">A foundational prototype for the Fashion Game, showcasing realistic cloth physics. This demo focuses on simulating fabric behavior.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/15KrZ0EqV7899eBzpixghjzQMsu9mMDAZ/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-
-
-            <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h4 class="card-title">Layered Cloth Simulation</h4>
-                <p class="card-text">An advanced prototype for the Fashion Game, demonstrating realistic physics for layered garments. This technology ensures seamless interaction and movement of
-                    multiple fabric layers.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/15SrhIh8mInIzOBBipbqeclzJNHRfoy0Z/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <!--Hair Simulation-->
-                <h4 class="card-title">Hair Simulation</h4>
-                <p class="card-text">A dedicated prototype for the Fashion Game, showcasing realistic hair physics. This system accurately simulates natural hair motion and interaction.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/15UjUeeBJEDoVqBao8bVXK77YnPYN2fu4/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row justify-content-center align-items-center">
-            <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h4 class="card-title">Minesweeper</h4>
-                <p class="card-text">A classic Minesweeper prototype featuring traditional gameplay mechanics, offering a challenging and engaging puzzle experience.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/1245KAigkdLujdJqi5C8UcDZMkEAvfJ3V/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-
-
-            <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h4 class="card-title">Minesweeper Customisation</h4>
-                <p class="card-text">This prototype allows dynamic adjustments to the grid size and bomb probability, giving players the flexibility to modify the bomb density and difficulty
-                    level.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/12YO66Cyvc3knEohIsGWe5Ku6IL_AdA_H/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center align-items-center">
-            <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h4 class="card-title">Parental Control App for Kids Games</h4>
-                <p class="card-text">Developed during a hackathon, this prototype allows parents to manage access to a kid’s game. The app provides features to lock or unlock the game, as well as
-                    selectively enable or disable specific game categories, offering a tailored and controlled gaming experience.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/12XMOpLlF6wkhCz0YfjO4IgffzWh0XgXx/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                <h4 class="card-title">Space Shooter</h4>
-                <p class="card-text">Created during a one-day hackathon, this game combines typing practice with an action-packed space shooter. Players control a spaceship flying through space,
-                    typing words displayed on the screen. Each keypress triggers a shot that destroys approaching obstacles. The challenge lies in typing quickly to eliminate obstacles before they
-                    reach and collide with the ship, making it both a fun and educational typing speed exercise.</p>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://drive.google.com/file/d/1PoumP_8AxbDAVYq47oAqRddj3_YYgWBG/preview" width="640" height="360" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <hr>
-
-    <!--Firebase-->
-    <div class="container">
-        <div>
-            <h1 class="text-white text-center display-4">Firebase Services</h1>
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <!--Firebase Analytics-->
-                    <h4 class="card-title">Firebase Analytics</h4>
-                    <p class="card-text">This demo showcases my implementation of Firebase Analytics in a mobile app, with a live demonstration of events being triggered and displayed in the Firebase
-                        Console. It highlights the process of tracking user interactions and analyzing data in real-time.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/12jqrURcxRd697ACOHFUtPQpltlkjgJl_/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <!--Remote Config-->
-                    <h4 class="card-title">Firebase Remote Config</h4>
-                    <p class="card-text">This demo highlights my implementation of Firebase Remote Config in a mobile app, with a live showcase of how remote configurations are updated and applied in
-                        real-time. </p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/12bPOpYUOTkblKbxkQ4B3Ne91LuTvfgSP/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row justify-content-center align-items-center">
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <!--Firebase Notifications-->
-                    <h4 class="card-title">Firebase Notifications</h4>
-                    <p class="card-text">This demo showcases my integration of Firebase Cloud Messaging (FCM) for push notifications in a mobile app. It includes a live demonstration of sending and
-                        receiving notifications in real-time, highlighting how to engage users with timely, targeted messages.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/130rpY5MsGgNO3VByfXHLCT9tNRuJkEA_/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <!--Firebase Deeplink-->
-                    <h4 class="card-title">Firebase Dynamic Links (Deep-linking)</h4>
-                    <p class="card-text">This demo showcases the integration of deep linking in a Unity app using Firebase Dynamic Links. It includes a live demonstration of how deep links are
-                        created, shared, and opened, enabling a seamless user experience across platforms while tracking engagement through Firebase.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/12u4DNZx32NH0pa1uc0D5-h2cYQUx_VV-/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <hr>
-
-    <!--Unity Services-->
-    <div class="container">
-        <div>
-            <h1 class="text-white text-center display-4">Unity Services</h1>
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <!--Remote Config-->
-                    <h4 class="card-title">Unity Ads</h4>
-                    <p class="card-text">This demo showcases the integration of Unity Ads in a mobile app built with Unity. It includes a live demonstration of displaying various ad formats (e.g.,
-                        interstitials, rewarded videos) and how to manage ad placement to optimize user experience and monetization.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/134tI6fxez4Setq8-QVLoOAx8hnl2ZiR8/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <!--Firebase Analytics-->
-                    <h4 class="card-title">Remote Config</h4>
-                    <p class="card-text">This demo highlights the integration of Unity Remote Config in a mobile app, showing how to dynamically update app settings and content without needing to
-                        release a new version. It demonstrates real-time configuration changes and how they impact app behavior and user experience.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/1347Oq-ke1ln34KuTwQ14ehQ3_LUYf105/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <hr>
-
-
-    <!--PlayFab-->
-    <div class="container">
-        <div>
-            <h1 class="text-white text-center display-4">PlayFab</h1>
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h4 class="card-title">Anonymous Login</h4>
-                    <p class="card-text">This demo showcases the integration of PlayFab’s anonymous login feature in a Unity app. It demonstrates how users can sign in without creating an account,
-                        allowing for a seamless and secure experience while interacting with PlayFab services like player data storage and game analytics.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/15pex0RbBj8TulMjeaDIAlkB_VVgJWPvT/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h4 class="card-title">Email Login</h4>
-                    <p class="card-text">This demo highlights the integration of PlayFab’s email login system in a Unity app. It demonstrates how users can securely log in using their email and
-                        password, providing a streamlined authentication process while accessing PlayFab features like player profiles and data management.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/15piUXFpY6Q6e2K-1J0evfIYtPmzjK5OK/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center align-items-center">
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h4 class="card-title">Catalog & Inventory Management</h4>
-                    <p class="card-text">This demo showcases the integration of PlayFab’s catalog and inventory management system in a Unity app. It demonstrates how to manage in-game items, handle
-                        item purchases, and update player inventories seamlessly. Watch as I walk through setting up a dynamic catalog, tracking item ownership, and integrating it into the game for a
-                        smooth player experience.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/15oxFewr6ZMCjZwro2MHWEaadGtEyfDWD/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h4 class="card-title">Remote Config</h4>
-                    <p class="card-text">This demo highlights the integration of PlayFab Remote Config in a Unity app. It shows how to dynamically adjust game settings, features, and content in
-                        real-time without requiring an app update. Watch as I demonstrate how to create and apply remote configurations to enhance player experience and optimize game performance.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/15pGVbui8-zEfXeWB3BTTk84yAUjVfegc/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <hr>
-
-
-    <!--Networking-->
-    <div class="container">
-        <div>
-            <h1 class="text-white text-center display-4">Networking</h1>
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h4 class="card-title">Simple Login System</h4>
-                    <p class="card-text">This demo showcases the implementation of a basic login system using API links. It demonstrates how user credentials are sent securely to a backend API,
-                        validated, and a response is received to authenticate users.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/123OZL5itfOSDN6L23daKuucRn6kHLTCQ/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="card col-lg-5 col-md-10 col-sm-10 rounded-4">
-                    <h4 class="card-title">Socket Connection</h4>
-                    <p class="card-text">This demo demonstrates how to establish a basic socket connection in a Unity app. It shows how to connect to a server using WebSockets, send and receive
-                        real-time data, and manage communication between the client and server.</p>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/12T6Oi_7ThxleZr35fOEOMUebW7t_iNeQ/preview" width="640" height="360" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
+</html>
